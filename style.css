@@ -8,7 +8,7 @@ body{
 header{
     background:#003366;
     color:white;
-    padding:30px;
+    padding:25px;
     text-align:center;
 }
 
@@ -25,6 +25,10 @@ nav a{
     font-weight:bold;
 }
 
+nav a:hover{
+    text-decoration:underline;
+}
+
 section{
     max-width:900px;
     margin:20px auto;
@@ -38,4 +42,10 @@ footer{
     padding:15px;
     background:#003366;
     color:white;
+    margin-top:20px;
+}
+
+img{
+    max-width:100%;
+    border-radius:10px;
 }
