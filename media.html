@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,6 +47,7 @@ Researcher | Electrical Engineer | AI in Power Systems
 
 </nav>
 
+```html
 <section>
 
 <h2>Media Gallery</h2>
@@ -61,7 +62,7 @@ Research activities, conferences, presentations, and academic events.
 
 <div class="gallery-item">
 
-<img src="images/hello.jpeg">
+<img src="images/hello.jpeg" onclick="openLightbox(this)">
 
 <p class="caption">
 Conference Presentation
@@ -73,7 +74,7 @@ Conference Presentation
 
 <div class="gallery-item">
 
-<img src="images/photo2.jpg">
+<img src="images/photo2.jpg" onclick="openLightbox(this)">
 
 <p class="caption">
 Research Discussion
@@ -85,7 +86,7 @@ Research Discussion
 
 <div class="gallery-item">
 
-<img src="images/photo3.jpg">
+<img src="images/photo3.jpg" onclick="openLightbox(this)">
 
 <p class="caption">
 Laboratory Work
@@ -97,7 +98,7 @@ Laboratory Work
 
 <div class="gallery-item">
 
-<img src="images/photo4.jpg">
+<img src="images/photo4.jpg" onclick="openLightbox(this)">
 
 <p class="caption">
 International Conference
@@ -109,7 +110,7 @@ International Conference
 
 <div class="gallery-item">
 
-<img src="images/photo5.jpg">
+<img src="images/photo5.jpg" onclick="openLightbox(this)">
 
 <p class="caption">
 Research Team
@@ -121,7 +122,7 @@ Research Team
 
 <div class="gallery-item">
 
-<img src="images/photo6.jpg">
+<img src="images/photo6.jpg" onclick="openLightbox(this)">
 
 <p class="caption">
 Field Activity
@@ -131,7 +132,58 @@ Field Activity
 
 </div>
 
+<!-- LIGHTBOX -->
+
+<div id="lightbox" onclick="closeLightbox()">
+
+<img id="lightbox-img">
+
+</div>
+
+<style>
+
+#lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+#lightbox img{
+    max-width:95%;
+    max-height:95%;
+    border-radius:10px;
+}
+
+</style>
+
+<script>
+
+function openLightbox(img){
+
+document.getElementById("lightbox").style.display="flex";
+
+document.getElementById("lightbox-img").src=img.src;
+
+}
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
+</script>
+
 </section>
+```
+
 
 <footer>
 
@@ -141,4 +193,4 @@ Field Activity
 
 </body>
 </html>
-```
+
