@@ -1,71 +1,34 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Media | Mahesh Rathi</title>
 
 <link rel="stylesheet" href="style.css">
-
-<style>
-/* Gallery Grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.05);
-}
-
-.caption {
-  text-align: center;
-  font-size: 14px;
-  margin-top: 5px;
-  color: #333;
-}
-
-/* Lightbox */
-#lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-#lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-}
-</style>
 
 </head>
 
 <body>
 
 <header>
+
 <h1>Dr. Mahesh Rathi</h1>
-<p>Researcher | Electrical Engineer | AI in Power Systems</p>
+
+<p>
+Researcher | Electrical Engineer | AI in Power Systems
+</p>
+
 </header>
 
-<!-- NAV -->
+<!-- NAVIGATION -->
+
 <nav>
+
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="research.html">Research</a>
@@ -81,56 +44,101 @@
 <a href="media.html">Media</a>
 <a href="resources.html">Resources</a>
 <a href="contact.html">Contact</a>
+
 </nav>
 
 <section>
 
 <h2>Media Gallery</h2>
 
+<p>
+Research activities, conferences, presentations, and academic events.
+</p>
+
 <div class="gallery">
 
-  <div class="gallery-item">
-    <img src="images/hello.jpeg" onclick="openLightbox(this)">
-    <p class="caption">Welcome Image</p>
-  </div>
+<!-- PHOTO 1 -->
 
-  <div class="gallery-item">
-    <img src="images/photo2.jpg" onclick="openLightbox(this)">
-    <p class="caption">Research Activity</p>
-  </div>
+<div class="gallery-item">
 
-  <div class="gallery-item">
-    <img src="images/photo3.jpg" onclick="openLightbox(this)">
-    <p class="caption">Conference Talk</p>
-  </div>
+<img src="images/hello.jpeg">
 
-  <div class="gallery-item">
-    <img src="images/photo4.jpg" onclick="openLightbox(this)">
-    <p class="caption">Field Work</p>
-  </div>
+<p class="caption">
+Conference Presentation
+</p>
 
 </div>
 
-<!-- LIGHTBOX -->
-<div id="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img">
+<!-- PHOTO 2 -->
+
+<div class="gallery-item">
+
+<img src="images/photo2.jpg">
+
+<p class="caption">
+Research Discussion
+</p>
+
+</div>
+
+<!-- PHOTO 3 -->
+
+<div class="gallery-item">
+
+<img src="images/photo3.jpg">
+
+<p class="caption">
+Laboratory Work
+</p>
+
+</div>
+
+<!-- PHOTO 4 -->
+
+<div class="gallery-item">
+
+<img src="images/photo4.jpg">
+
+<p class="caption">
+International Conference
+</p>
+
+</div>
+
+<!-- PHOTO 5 -->
+
+<div class="gallery-item">
+
+<img src="images/photo5.jpg">
+
+<p class="caption">
+Research Team
+</p>
+
+</div>
+
+<!-- PHOTO 6 -->
+
+<div class="gallery-item">
+
+<img src="images/photo6.jpg">
+
+<p class="caption">
+Field Activity
+</p>
+
+</div>
+
 </div>
 
 </section>
 
-<footer>© 2026 Mahesh Rathi</footer>
+<footer>
 
-<!-- JAVASCRIPT (IMPORTANT: BEFORE BODY CLOSE) -->
-<script>
-function openLightbox(img) {
-  document.getElementById("lightbox").style.display = "flex";
-  document.getElementById("lightbox-img").src = img.src;
-}
+© 2026 Mahesh Rathi
 
-function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
-}
-</script>
+</footer>
 
 </body>
 </html>
+```
