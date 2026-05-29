@@ -157,3 +157,38 @@ nav a{
     font-weight:bold;
 }
 
+
+
+```css
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.project-box{
+    background:white;
+    margin-top:25px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.08);
+    border-left:6px solid #003366;
+    transition:0.3s;
+}
+
+.project-box:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 15px rgba(0,0,0,0.12);
+}
+
+.project-box h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.project-box p{
+    line-height:1.8;
+}
+
+.project-box ul{
+    margin-top:10px;
+    margin-bottom:10px;
+}
