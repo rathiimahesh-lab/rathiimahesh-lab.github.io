@@ -224,41 +224,40 @@ nav a{
     line-height:1.8;
 }
 
-```css
 /* =========================
-   TABLE DESIGN
+   STUDENT TABLE
 ========================= */
-
-.table-container{
-    overflow-x:auto;
-    margin-top:20px;
-}
 
 table{
     width:100%;
     border-collapse:collapse;
+    margin-top:20px;
     background:white;
 }
 
 table th{
     background:#003366;
     color:white;
-    padding:12px;
+    padding:14px;
+    border:1px solid #ccc;
     text-align:center;
 }
 
 table td{
+    padding:18px 14px;   /* MAIN SPACE INSIDE CELLS */
     border:1px solid #ccc;
-    padding:10px;
-    line-height:1.6;
     vertical-align:top;
+    line-height:1.8;     /* SPACE BETWEEN LINES */
 }
+
+/* alternate row color */
 
 table tr:nth-child(even){
-    background:#f7f7f7;
+    background:#f9f9f9;
 }
+
+/* hover effect */
 
 table tr:hover{
-    background:#eef4ff;
+    background:#eef5ff;
 }
-
