@@ -261,3 +261,50 @@ table tr:nth-child(even){
 table tr:hover{
     background:#eef5ff;
 }
+
+/* =========================
+   ABOUT PAGE PROFILE
+========================= */
+
+.about-section{
+    max-width:1000px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.about-box{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+.profile-name{
+    font-size:42px;
+    margin-bottom:5px;
+    color:#111;
+}
+
+.designation{
+    color:#0056b3;
+    font-size:28px;
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.department{
+    font-size:18px;
+    line-height:1.7;
+    color:#444;
+}
+
+.profile-details{
+    margin-top:25px;
+    line-height:2;
+    font-size:17px;
+    padding-left:20px;
+}
+
+.profile-details li{
+    margin-bottom:10px;
+}
