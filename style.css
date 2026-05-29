@@ -195,7 +195,7 @@ nav a{
 
 
 
-```css
+
 /* =========================
    STUDENTS SECTION
 ========================= */
@@ -222,5 +222,43 @@ nav a{
 
 .student-box p{
     line-height:1.8;
+}
+
+```css
+/* =========================
+   TABLE DESIGN
+========================= */
+
+.table-container{
+    overflow-x:auto;
+    margin-top:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th{
+    background:#003366;
+    color:white;
+    padding:12px;
+    text-align:center;
+}
+
+table td{
+    border:1px solid #ccc;
+    padding:10px;
+    line-height:1.6;
+    vertical-align:top;
+}
+
+table tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+table tr:hover{
+    background:#eef4ff;
 }
 
